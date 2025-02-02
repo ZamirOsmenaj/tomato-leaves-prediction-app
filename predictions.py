@@ -211,6 +211,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-CNN_trained_tomato_leaf_disease_model.keras
