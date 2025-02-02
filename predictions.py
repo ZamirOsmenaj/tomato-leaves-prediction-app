@@ -87,7 +87,7 @@ def predict_page(model):
 
                 result_index, percentage = model_prediction(model, test_image)
 
-                test_data_dir = '../Tomato_Leaves_Dataset/80-10-10/test'
+                test_data_dir = './test-images'
                 diseases = os.listdir(test_data_dir)
                 diseases.sort()
 
@@ -133,7 +133,7 @@ def home_page():
         By leveraging the power of AI, we aim to support sustainable agriculture and help you achieve better yields with healthier plants.
     """)
 
-    st.image("media/home_page.jpeg")
+    st.image("media-for-application/home_page.jpeg")
 
 def features():
     st.markdown("""
@@ -147,7 +147,7 @@ def features():
         Our features are designed to provide a comprehensive solution for tomato disease management, ensuring that you can protect your plants with minimal effort.
     """)
 
-    st.image("media/features.jpeg")
+    st.image("media-for-application/features.jpeg")
 
 def recommendations():
     st.markdown("""
@@ -163,7 +163,7 @@ def recommendations():
         By providing actionable insights and expert advice, we aim to help you maintain healthy tomato plants and achieve optimal growth and productivity.
     """)
 
-    st.image("media/recommendations.jpeg")
+    st.image("media-for-application/recommendations.jpeg")
 
 def about_us():
     st.markdown("""
@@ -182,7 +182,7 @@ def about_us():
 
     """)
 
-    st.image("media/about_us.jpeg")
+    st.image("media-for-application/about_us.jpeg")
 
 def main():
     with st.sidebar: # If this is removed, this it goes straight to the page.
@@ -203,7 +203,7 @@ def main():
         recommendations()
     elif selected == "Disease Recognision":
         # Load trained model for making predictions
-        model = tf.keras.models.load_model('../Models/80-10-10/CNN_trained_tomato_leaf_disease_model.keras')
+        model = tf.keras.models.load_model('./CNN_trained_tomato_leaf_disease_model.keras')
     
         predict_page(model)
     else:
