@@ -203,7 +203,7 @@ def main():
         recommendations()
     elif selected == "Disease Recognision":
         # Load trained model for making predictions
-        model = tf.keras.models.load_model('./Model/CNN_trained_tomato_leaf_disease_model.keras')
+        model = tf.keras.models.load_model('./Model/CNN_trained_tomato_leaf_disease_model_compatible.keras')
     
         predict_page(model)
     else:
