@@ -135,6 +135,7 @@ def home_page():
 
     st.image("media-for-application/home_page.jpg")
 
+
 def features():
     st.markdown("""
         # Key Features of Our Platform
@@ -148,6 +149,7 @@ def features():
     """)
 
     st.image("media-for-application/features.jpg")
+
 
 def recommendations():
     st.markdown("""
@@ -164,6 +166,7 @@ def recommendations():
     """)
 
     st.image("media-for-application/recommendations.png")
+
 
 def about_us():
     st.markdown("""
