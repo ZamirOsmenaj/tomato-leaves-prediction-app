@@ -133,7 +133,7 @@ def home_page():
         By leveraging the power of AI, we aim to support sustainable agriculture and help you achieve better yields with healthier plants.
     """)
 
-    st.image("media-for-application/home_page.jpeg")
+    st.image("media-for-application/home_page.jpg")
 
 def features():
     st.markdown("""
@@ -147,7 +147,7 @@ def features():
         Our features are designed to provide a comprehensive solution for tomato disease management, ensuring that you can protect your plants with minimal effort.
     """)
 
-    st.image("media-for-application/features.jpeg")
+    st.image("media-for-application/features.jpg")
 
 def recommendations():
     st.markdown("""
@@ -163,7 +163,7 @@ def recommendations():
         By providing actionable insights and expert advice, we aim to help you maintain healthy tomato plants and achieve optimal growth and productivity.
     """)
 
-    st.image("media-for-application/recommendations.jpeg")
+    st.image("media-for-application/recommendations.png")
 
 def about_us():
     st.markdown("""
